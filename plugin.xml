@@ -84,7 +84,7 @@
             <source url="https://cdn.cocoapods.org/"/>
         </config>
         <pods use-frameworks="true">
-            <pod name="OneSignalXCFramework" spec="5.0.5" />
+            <pod name="OneSignalXCFramework" git="git@github.com:byteworks-ch/OneSignal-iOS-SDK.git" branch="feature/ios-critical-alert" />
         </pods>
     </podspec>
 
