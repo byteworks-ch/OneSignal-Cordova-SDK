@@ -95,6 +95,22 @@ export default class Notifications {
     };
 
     /**
+     * Prompt the user for permission to receive critical push notifications. This will display the native system prompt to request push notification permission.
+     * Use the fallbackToSettings parameter to prompt to open the settings app if a user has already declined push permissions.
+     *
+     *
+     * @param  {boolean} fallbackToSettings
+     * @returns {Promise<boolean>}
+     */
+    requestCriticalPermission(fallbackToSettings?: boolean): Promise<boolean> {
+        let fallback = fallbackToSettings ?? false;
+
+        return new Promise<boolean>((resolve, reject) => {
+            window.cordova.exec(resolve, reject, "OneSignalPush", "requestCriticalPermission", [fallback]);
+        });
+    };
+
+    /**
      * Whether attempting to request notification permission will show a prompt. Returns true if the device has not been prompted for push notification permission already.
      * @returns {Promise<boolean>}
      */
