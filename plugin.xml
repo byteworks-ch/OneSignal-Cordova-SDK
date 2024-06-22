@@ -37,7 +37,7 @@
   <js-module src="dist/LiveActivitiesNamespace.js" name="LiveActivitiesNamespace" />
 
   <platform name="android">
-    <framework src="com.onesignal:OneSignal:5.1.13" />
+    <framework src="com.onesignal:OneSignal:5.1.15" />
     <framework src="build-extras-onesignal.gradle" custom="true" type="gradleReference" />
     <framework src="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10" />
 
@@ -85,7 +85,7 @@
             <source url="https://cdn.cocoapods.org/"/>
         </config>
         <pods use-frameworks="true">
-            <pod name="OneSignalXCFramework" spec="5.2.0" />
+            <pod name="OneSignalXCFramework" git="git@github.com:byteworks-ch/OneSignal-iOS-SDK.git" tag="5.1.5-patch" />
         </pods>
     </podspec>
 
