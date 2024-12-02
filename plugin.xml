@@ -85,7 +85,7 @@
             <source url="https://cdn.cocoapods.org/"/>
         </config>
         <pods use-frameworks="true">
-            <pod name="OneSignalXCFramework" spec="5.2.8" />
+            <pod name="OneSignalXCFramework" git="git@github.com:byteworks-ch/OneSignal-iOS-SDK.git" tag="5.2.8-patch1" />
         </pods>
     </podspec>
 
